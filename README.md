@@ -16,3 +16,6 @@ npm run test
 
 // implement functions in index.js files and make all tests pass
 ```
+
+## additional ideas
+- https://adriann.github.io/programming_problems.html
