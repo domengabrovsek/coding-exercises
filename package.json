@@ -1,0 +1,20 @@
+{
+  "name": "coding-exercises",
+  "version": "1.0.0",
+  "description": "Practicing coding exercises",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/domengabrovsek/coding-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/domengabrovsek/coding-exercises/issues"
+  },
+  "homepage": "https://github.com/domengabrovsek/coding-exercises#readme"
+}
