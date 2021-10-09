@@ -1,3 +1,5 @@
+/* DO NOT COMMIT AND PUSH CHANGES TO MASTER */
+
 /**
  * Function which accepts a list of numbers and returns the highest number in the list. 
  * If elements are not numbers, ignore them.
