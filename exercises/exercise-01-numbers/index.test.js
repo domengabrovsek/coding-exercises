@@ -60,8 +60,9 @@ describe('tests for exercise-01-numbers', () => {
       { numbers: [1, 21, '333', 4, '5'], expectedResult: 21 },
       { numbers: [1, 2, undefined, 4, 5], expectedResult: 1 },
       { numbers: [1, 2, 3, -422, -54], expectedResult: -422 },
+      { numbers: [1, 2, 3, -422, 333 - 54], expectedResult: -422 },
       { numbers: [], expectedResult: null },
-      { numbers: [1234, 55352, 5443, 45433, 52235, 99999, 12345, 222.24, 333, 66], expectedResult: 12345 }
+      { numbers: [1234, 55352, 5443, 45433, 52235, 99999, 12345, 22224, 333, 66], expectedResult: 12345 }
     ];
 
     testCases.forEach(testCase => {

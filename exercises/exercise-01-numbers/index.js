@@ -1,5 +1,3 @@
-/* DO NOT COMMIT AND PUSH CHANGES TO MASTER */
-
 /**
  * Function which accepts a list of numbers and returns the highest number in the list.
  * If elements are not numbers, ignore them.
@@ -8,8 +6,8 @@
  * @returns {Number} Highest number
  */
 const highestNumber = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return Math.max(...numbers.filter(x => typeof (x) === 'number'));
 };
 
 /**
@@ -20,8 +18,8 @@ const highestNumber = (numbers) => {
  * @returns {Number} Lowest number
  */
 const lowestNumber = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return Math.min(...numbers.filter(x => typeof (x) === 'number'));
 };
 
 /**
@@ -33,8 +31,22 @@ const lowestNumber = (numbers) => {
  * @returns {Number} Number with most digits
  */
 const mostDigits = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return Math.min(...numbers
+    .filter(x => typeof (x) === 'number')
+    .map(x => ({
+      number: x, decimals: String(x)
+        .split('')
+        .filter(x => x !== '-')
+        .join('').length
+    }))
+    .filter(x => x.decimals === Math.max(...numbers
+      .filter(x => typeof (x) === 'number')
+      .map(x => (String(x)
+        .split('')
+        .filter(x => x !== '-')
+        .join('').length))))
+    .map(x => x.number));
 };
 
 /**
@@ -46,8 +58,22 @@ const mostDigits = (numbers) => {
  * @returns {Number} Number with most digits
  */
 const leastDigits = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return Math.max(...numbers
+    .filter(x => typeof (x) === 'number')
+    .map(x => ({
+      number: x, decimals: String(x)
+        .split('')
+        .filter(x => x !== '-')
+        .join('').length
+    }))
+    .filter(x => x.decimals === Math.min(...numbers
+      .filter(x => typeof (x) === 'number')
+      .map(x => (String(x)
+        .split('')
+        .filter(x => x !== '-')
+        .join('').length))))
+    .map(x => x.number));
 };
 
 /**
@@ -58,8 +84,8 @@ const leastDigits = (numbers) => {
  * @returns {Number} Number sum of all numbers
  */
 const sumNumbers = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return numbers.filter(x => typeof (x) === 'number').reduce((x, y) => x + y, 0);
 };
 
 /**
@@ -70,8 +96,14 @@ const sumNumbers = (numbers) => {
  * @returns {Number} sum of odd numbers multiplied by sum of even numbers.
  */
 const productOfEvenAndOddSums = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
+  if (!numbers || numbers.length === 0) { return null; }
+  return (numbers
+    .filter(x => typeof (x) === 'number')
+    .filter(x => x % 2 === 0)
+    .reduce((x, y) => x + y, 0)) * (numbers
+      .filter(x => typeof (x) === 'number')
+      .filter(x => x % 2 !== 0)
+      .reduce((x, y) => x + y, 0));
 };
 
 module.exports = {
