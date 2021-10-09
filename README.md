@@ -4,6 +4,9 @@ Exercises for practicing basic coding skills.
 ## get started
 ```js
 
+// checkout the code
+git clone https://github.com/domengabrovsek/coding-exercises.git
+
 // make sure you have nodejs installed
 node --version
 npm --version
