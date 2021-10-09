@@ -46,9 +46,33 @@ const leastDecimals = (numbers) => {
   // TODO: Implement this function
 }
 
+/**
+ * Function which accepts a list of numbers and returns the sum of all numbers.
+ * If elements are not numbers, ignore them.
+ * If the array is empty, return null.
+ * @param {Array.<Number>} numbers 
+ * @returns {Number} Number sum of all numbers
+ */
+const sumNumbers = (numbers) => {
+  // TODO: Implement this function
+}
+
+/**
+ * Function which accepts a list of numbers and returns the sum of odd numbers multiplied by sum of even numbers.
+ * If elements are not numbers, ignore them.
+ * If the array is empty, return null.
+ * @param {Array.<Number>} numbers 
+ * @returns {Number} sum of odd numbers multiplied by sum of even numbers.
+ */
+const productOfEvenAndOddSums = (numbers) => {
+  // TODO: Implement this function
+}
+
 module.exports = {
   highestNumber,
   lowestNumber,
   mostDecimals,
-  leastDecimals
+  leastDecimals,
+  sumNumbers,
+  productOfEvenAndOddSums
 };
