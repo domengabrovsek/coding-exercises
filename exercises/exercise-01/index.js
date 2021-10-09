@@ -22,12 +22,26 @@ const highestNumber = (numbers) => {
 }
 
 /**
- * TODO: Implement a function which accepts a list of numbers and returns the lowest number in the list. 
+ * Implement a function which accepts a list of numbers and returns the lowest number in the list. 
  * If the array is empty, return null.
  * @returns {Number} Lowest number
  */
 const lowestNumber = (numbers) => {
-  // TODO: Implement this function
+    if(numbers.length === 0){
+      return null;
+    }
+    
+    let currentmin = numbers[0]
+    console.log('Minimum before starting loop ', currentmin)
+    console.log('Length of list ', numbers.length)
+    
+    for(let i = 0; i < numbers.length; i++){
+      console.log(`is ${numbers[i]} smaller than ${currentmin}?`);
+      if(numbers[i] < currentmin && typeof(numbers[i]) !== 'string'){
+        currentmin = numbers[i];
+      }
+    }
+    return currentmin;
 }
 
 /**
