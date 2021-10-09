@@ -10,6 +10,7 @@ describe('tests for exercise-01-numbers', () => {
       { expectedResult: null },
       { numbers: [1, 2, 3, 4, 5], expectedResult: 5 },
       { numbers: [1, 2, 3, 4, "5"], expectedResult: 4 },
+      { numbers: [1, 2, 3, 4, "5",{}], expectedResult: 4 },
       { numbers: [1, 2, undefined, 4, 5], expectedResult: 5 },
       { numbers: [1, 2, 3, -4, -5], expectedResult: 3 },
       { numbers: [], expectedResult: null },
