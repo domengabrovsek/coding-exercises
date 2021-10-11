@@ -69,8 +69,32 @@ const lowestNumber = (numbers) => {
  */
 const mostDigits = (numbers) => {
   // TODO: Implement this function
-  return numbers;
-};
+  if (!numbers || numbers.length === 0) {
+    return null;
+  }
+
+  let stringLengthMax = String(numbers[0]).length;
+
+  for(let i=0; i<numbers.length; i++) {
+
+    if (stringLengthMax < String(numbers[i]).length && typeof(numbers[i])==='number') {
+        stringLengthMax = String(numbers[i]).length;
+    }
+
+  }
+
+  let minLengthMax = numbers.find(number => String(number).length === stringLengthMax);
+
+  for(let i=0; i<numbers.length; i++) {
+    if (stringLengthMax === String(numbers[i]).length && minLengthMax > numbers[i]) {
+      minLengthMax = numbers[i];
+    }
+  }
+
+  return minLengthMax;
+
+
+}
 
 /**
  * Function which accepts a list of numbers and returns the number with the least digits in the list.
