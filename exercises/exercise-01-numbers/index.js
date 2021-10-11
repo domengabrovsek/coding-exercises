@@ -8,9 +8,26 @@
  * @returns {Number} Highest number
  */
 const highestNumber = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
-};
+
+  if (!numbers || numbers.length === 0) {
+    return null;    
+  }
+
+  let currentMax = numbers[0];
+
+  for(let i=0; i<numbers.length; i++){
+      
+
+      if (typeof(numbers[i])==='number' && currentMax < numbers[i]) {
+        currentMax = numbers[i];
+      }
+
+      console.log("This is current max",currentMax);
+
+  }
+  return currentMax;
+
+}
 
 /**
  * Function which accepts a list of numbers and returns the lowest number in the list.
@@ -21,8 +38,9 @@ const highestNumber = (numbers) => {
  */
 const lowestNumber = (numbers) => {
   // TODO: Implement this function
-  return numbers;
-};
+  
+
+}
 
 /**
  * Function which accepts a list of numbers and returns the number with the most digits in the list.
