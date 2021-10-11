@@ -39,6 +39,23 @@ const highestNumber = (numbers) => {
 const lowestNumber = (numbers) => {
   // TODO: Implement this function
   
+  if (!numbers || numbers.length === 0) {
+    return null;    
+  }
+
+  let currentMin = numbers[0];
+
+  for(let i=0; i<numbers.length; i++){
+      
+
+      if (typeof(numbers[i])==='number' && currentMin > numbers[i]) {
+        currentMin = numbers[i];
+      }
+
+      console.log("This is current min",currentMin);
+
+  }
+  return currentMin;
 
 }
 
