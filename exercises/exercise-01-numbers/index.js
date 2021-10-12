@@ -105,9 +105,36 @@ const mostDigits = (numbers) => {
  * @returns {Number} Number with most digits
  */
 const leastDigits = (numbers) => {
-  // TODO: Implement this function
-  return numbers;
-};
+
+
+  if (!numbers || numbers.length === 0) {
+    return null;
+  }
+
+  let minLength = String(numbers[0]).length; //minLength contains the length of the first element in the array
+  let minLengthNumber = numbers[0];
+  numbers.forEach(number => { 
+    let current_num_length = String(number).length;
+    //console.log(`Number: ${number} Length: ${current_num_length}`);
+
+    if (typeof(number)==="number" && minLength > current_num_length){  
+      minLength = current_num_length;
+      minLengthNumber = number;
+    }
+  })
+console.log("This is minLenght: ",minLength);
+console.log("This is minLengthNumber:",minLengthNumber);
+
+
+  numbers.forEach(number => {
+    if (typeof(number)==="number" && String(number).length == minLength && number > minLengthNumber){
+      minLengthNumber = number;      
+    }
+  })
+
+  return minLengthNumber;
+  
+}
 
 /**
  * Function which accepts a list of numbers and returns the sum of all numbers.
