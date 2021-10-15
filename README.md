@@ -1,5 +1,8 @@
 # coding-exercises
-Exercises for practicing basic coding skills.
+Simple exercises for practicing basic coding skills.
+
+## description
+Some of my friends wanted to learn coding and I've decided to help them by creating this repository.
 
 ## get started
 ```js
@@ -20,10 +23,5 @@ npm install
 // run tests
 npm run test
 
-// create your own branch - DO NOT COMMIT AND PUSH CHANGES TO MASTER
-
 // implement functions in index.js files and make all tests pass
 ```
-
-## additional ideas for later
-- https://adriann.github.io/programming_problems.html

@@ -1,5 +1,3 @@
-/* DO NOT COMMIT AND PUSH CHANGES TO MASTER */
-
 const {
   longestWord,
   shortestWord,

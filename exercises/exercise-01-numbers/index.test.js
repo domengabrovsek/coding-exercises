@@ -1,5 +1,3 @@
-/* DO NOT COMMIT AND PUSH CHANGES TO MASTER */
-
 const { highestNumber, lowestNumber, mostDecimals, leastDecimals, sumNumbers, productOfEvenAndOddSums } = require('./index');
 
 describe('tests for exercise-01-numbers', () => {
