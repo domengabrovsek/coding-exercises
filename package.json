@@ -4,7 +4,8 @@
   "description": "Practicing coding exercises",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "lint": "eslint . --max-warnings 0 --fix"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,11 @@
   "homepage": "https://github.com/domengabrovsek/coding-exercises#readme",
   "dependencies": {
     "jest": "^27.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-json": "^3.1.0",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
