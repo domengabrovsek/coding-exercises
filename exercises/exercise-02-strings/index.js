@@ -8,7 +8,8 @@
  */
 const longestWord = (words) => {
   // TODO: Implement this function
-}
+  return words;
+};
 
 /**
  * Function which accepts a list of words and returns the shortest word.
@@ -20,7 +21,8 @@ const longestWord = (words) => {
  */
 const shortestWord = (words) => {
   // TODO: Implement this function
-}
+  return words;
+};
 
 /**
  * Function which accepts a list of words and returns the word with the most vowels.
@@ -32,7 +34,8 @@ const shortestWord = (words) => {
  */
 const wordWithMostVowels = (words) => {
   // TODO: Implement this function
-}
+  return words;
+};
 
 /**
  * Function which accepts a list of words and returns the word with the least vowels.
@@ -43,7 +46,8 @@ const wordWithMostVowels = (words) => {
  */
 const wordWithLeastVowels = (words) => {
   // TODO: Implement this function
-}
+  return words;
+};
 
 /**
  * Function which accepts a list of words and a number and returns all words which have more letters than that number.
@@ -56,7 +60,8 @@ const wordWithLeastVowels = (words) => {
  */
 const wordsLongerThanX = (words, x) => {
   // TODO: Implement this function
-}
+  return words, x;
+};
 
 /**
  * Function which accepts a list of words and returns longest word.
@@ -68,7 +73,8 @@ const wordsLongerThanX = (words, x) => {
  */
 const wordsShorterThanX = (words, x) => {
   // TODO: Implement this function
-}
+  return words, x;
+};
 
 /**
  * Function which accepts a word and a letter and returns how many of those letters are in the word.
@@ -79,17 +85,19 @@ const wordsShorterThanX = (words, x) => {
  */
 const numberOfLettersInWord = (word, letter) => {
   // TODO: Implement this function
-}
+  return word, letter;
+};
 
 /**
  * Function which accepts a word and returns number of unique letters.
  * If word is not a string, return null.
- * @param {String} word Word  
- * @returns {Number} Number of unique letters 
+ * @param {String} word Word
+ * @returns {Number} Number of unique letters
  */
 const numberOfUniqueLettersInWord = (word) => {
   // TODO: Implement this function
-}
+  return word;
+};
 
 module.exports = {
   longestWord,
