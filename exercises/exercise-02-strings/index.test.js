@@ -33,7 +33,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).toBe(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for shortestWord function', () => {
@@ -59,7 +59,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).toBe(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for wordWithMostVowels function', () => {
@@ -85,7 +85,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).toBe(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for wordWithLeastVowels function', () => {
@@ -111,7 +111,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).toBe(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for wordsLongerThanX function', () => {
@@ -138,7 +138,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).equals(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for wordsShorterThanX function', () => {
@@ -165,7 +165,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).equals(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for numberOfLettersInWord function', () => {
@@ -194,7 +194,7 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).equals(testCase.expectedResult);
       });
-    })
+    });
   });
 
   describe('tests for numberOfUniqueLettersInWord function', () => {
@@ -222,6 +222,6 @@ describe('tests for exercise-02-strings', () => {
         // assert
         expect(result).equals(testCase.expectedResult);
       });
-    })
+    });
   });
-})
+});
