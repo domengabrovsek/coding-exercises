@@ -25,27 +25,27 @@ const lowestNumber = (numbers) => {
 };
 
 /**
- * Function which accepts a list of numbers and returns the number with the most decimals in the list.
+ * Function which accepts a list of numbers and returns the number with the most digits in the list.
  * If there is more than one, return the smallest one.
  * If elements are not numbers, ignore them.
  * If the array is empty, return null.
  * @param {Array.<Number>} numbers
- * @returns {Number} Number with most decimals
+ * @returns {Number} Number with most digits
  */
-const mostDecimals = (numbers) => {
+const mostDigits = (numbers) => {
   // TODO: Implement this function
   return numbers;
 };
 
 /**
- * Function which accepts a list of numbers and returns the number with the least decimals in the list.
+ * Function which accepts a list of numbers and returns the number with the least digits in the list.
  * If there is more than one, return the highest one.
  * If elements are not numbers, ignore them.
  * If the array is empty, return null.
  * @param {Array.<Number>} numbers
- * @returns {Number} Number with most decimals
+ * @returns {Number} Number with most digits
  */
-const leastDecimals = (numbers) => {
+const leastDigits = (numbers) => {
   // TODO: Implement this function
   return numbers;
 };
@@ -77,8 +77,8 @@ const productOfEvenAndOddSums = (numbers) => {
 module.exports = {
   highestNumber,
   lowestNumber,
-  mostDecimals,
-  leastDecimals,
+  mostDigits,
+  leastDigits,
   sumNumbers,
   productOfEvenAndOddSums
 };
