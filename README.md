@@ -14,9 +14,6 @@ git clone https://github.com/domengabrovsek/coding-exercises.git
 node --version
 npm --version
 
-// if npm version is lower than 8.0.0 then upgrade it
-npm install -g npm
-
 // install dependencies
 npm install
 
