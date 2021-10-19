@@ -1,4 +1,4 @@
-const { highestNumber, lowestNumber, mostDecimals, leastDecimals, sumNumbers, productOfEvenAndOddSums } = require('./index');
+const { highestNumber, lowestNumber, mostDigits, leastDigits, sumNumbers, productOfEvenAndOddSums } = require('./index');
 
 describe('tests for exercise-01-numbers', () => {
   describe('tests for highest number function', () => {
@@ -51,7 +51,7 @@ describe('tests for exercise-01-numbers', () => {
     });
   });
 
-  describe('tests for most decimals number function', () => {
+  describe('tests for most digits number function', () => {
 
     // arrange
     const testCases = [
@@ -68,7 +68,7 @@ describe('tests for exercise-01-numbers', () => {
       test(`should return ${testCase.expectedResult}`, () => {
 
         // act
-        const result = mostDecimals(testCase.numbers);
+        const result = mostDigits(testCase.numbers);
 
         // assert
         expect(result).toBe(testCase.expectedResult);
@@ -76,7 +76,7 @@ describe('tests for exercise-01-numbers', () => {
     });
   });
 
-  describe('tests for least decimals number function', () => {
+  describe('tests for least digits number function', () => {
 
     // arrange
     const testCases = [
@@ -86,14 +86,14 @@ describe('tests for exercise-01-numbers', () => {
       { numbers: [1, 2, undefined, 4, 5], expectedResult: 5 },
       { numbers: [144, 21, 43, -422, -54], expectedResult: 43 },
       { numbers: [], expectedResult: null },
-      { numbers: [1234, 55352, 5443, 45433, 52235, 99999, 12345, 222.24, 333, 66], expectedResult: 66 }
+      { numbers: [1234, 55352, 5443, 45433, 52235, 99999, 12345, 22224, 333, 66], expectedResult: 66 }
     ];
 
     testCases.forEach(testCase => {
       test(`should return ${testCase.expectedResult}`, () => {
 
         // act
-        const result = leastDecimals(testCase.numbers);
+        const result = leastDigits(testCase.numbers);
 
         // assert
         expect(result).toBe(testCase.expectedResult);
