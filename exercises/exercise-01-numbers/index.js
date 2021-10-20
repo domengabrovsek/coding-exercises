@@ -163,7 +163,20 @@ const sumNumbers = (numbers) => {
  */
 const productOfEvenAndOddSums = (numbers) => {
   // TODO: Implement this function
-  return numbers;
+  let sumEvenNumbers = 0;
+  let sumOddNumbers = 0;
+  if (!numbers || numbers.length === 0) {
+    return null;
+  }
+  numbers.forEach(number => {
+    if (number % 2 === 0 && typeof (number) === 'number') {
+      sumEvenNumbers = sumEvenNumbers + number;
+    }
+  else if(number % 2 !== 0 && typeof (number) === 'number') {
+      sumOddNumbers = sumOddNumbers + number;
+  }
+  });
+  return sumEvenNumbers * sumOddNumbers;
 };
 
 module.exports = {
