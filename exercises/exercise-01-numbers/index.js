@@ -136,6 +136,10 @@ console.log("This is minLengthNumber:",minLengthNumber);
   
 }
 
+
+
+
+
 /**
  * Function which accepts a list of numbers and returns the sum of all numbers.
  * If elements are not numbers, ignore them.
@@ -145,8 +149,27 @@ console.log("This is minLengthNumber:",minLengthNumber);
  */
 const sumNumbers = (numbers) => {
   // TODO: Implement this function
-  return numbers;
-};
+  let sumOfNumbers;
+  numbers.forEach(number => {
+    if(typeof(number)==="number" && numbers.length != 0){
+      sumNumbers = number + sumOfNumbers;
+    }
+
+    else(numbers.length === 0) {
+      return null;  
+    }
+
+    return sumOfNumbers;
+
+  })
+
+}
+
+
+
+
+
+
 
 /**
  * Function which accepts a list of numbers and returns the sum of odd numbers multiplied by sum of even numbers.
