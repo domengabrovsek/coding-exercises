@@ -139,19 +139,17 @@ const leastDigits = (numbers) => {
  * @returns {Number} Number sum of all numbers
  */
 const sumNumbers = (numbers) => {
-  // TODO: Implement this function
-  let sumOfNumbers;
+  if (!numbers || numbers.length === 0) {
+    return null;
+  }
+
+  let sumOfNumbers = 0;
+
   numbers.forEach(number => {
-    if (typeof (number) === 'number' && numbers.length !== 0) {
+    if (typeof (number) === 'number') {
       sumOfNumbers = number + sumOfNumbers;
     }
-
-    else if (numbers.length === 0) {
-      return null;
-    }
-
-  }
-  );
+  });
   return sumOfNumbers;
 
 };
