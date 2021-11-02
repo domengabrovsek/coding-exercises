@@ -73,9 +73,15 @@ const lowestNumber = (numbers) => {
  * @param {Array.<Number>} numbers
  * @returns {Number} Number with most digits
  */
+
 const mostDigits = (numbers) => {
-  // TODO: Implement this function
   // Check if list is empty
+  if (numbers === undefined || numbers.length === 0) {
+    return null;
+  }
+
+  // TODO: Implement this function
+
   return numbers;
 };
 
