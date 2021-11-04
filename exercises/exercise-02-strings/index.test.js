@@ -31,7 +31,7 @@ describe('tests for exercise-02-strings', () => {
         const result = longestWord(testCase.words);
 
         // assert
-        expect(result).toBe(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -57,7 +57,7 @@ describe('tests for exercise-02-strings', () => {
         const result = shortestWord(testCase.words);
 
         // assert
-        expect(result).toBe(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -83,7 +83,7 @@ describe('tests for exercise-02-strings', () => {
         const result = wordWithMostVowels(testCase.words);
 
         // assert
-        expect(result).toBe(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -109,7 +109,7 @@ describe('tests for exercise-02-strings', () => {
         const result = wordWithLeastVowels(testCase.words);
 
         // assert
-        expect(result).toBe(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -124,7 +124,7 @@ describe('tests for exercise-02-strings', () => {
       { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear'], x: 1, expectedResult: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'pear'] },
       { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', null], x: 1, expectedResult: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'pear'] },
       { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', {}], x: 3, expectedResult: ['pikachu', 'banana', 't-rex', 'pizza', 'pear'] },
-      { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', 'a'], x: 4, expectedResult: ['pikachu', 'banana', 'pizza'] },
+      { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', 'a'], x: 4, expectedResult: ['pikachu', 'banana', 't-rex', 'pizza'] },
       { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', 'c'], x: 6, expectedResult: ['pikachu'] },
       { words: ['pikachu', 'banana', 'dog', 't-rex', 'pizza', 'x', 'pear', 'c'], x: 10, expectedResult: [] }
     ];
@@ -136,7 +136,7 @@ describe('tests for exercise-02-strings', () => {
         const result = wordsLongerThanX(testCase.words, testCase.x);
 
         // assert
-        expect(result).equals(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -163,7 +163,7 @@ describe('tests for exercise-02-strings', () => {
         const result = wordsShorterThanX(testCase.words, testCase.x);
 
         // assert
-        expect(result).equals(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -192,7 +192,7 @@ describe('tests for exercise-02-strings', () => {
         const result = numberOfLettersInWord(testCase.word, testCase.letter);
 
         // assert
-        expect(result).equals(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
@@ -206,11 +206,11 @@ describe('tests for exercise-02-strings', () => {
       { word: [1], letter: 5, expectedResult: null },
       { word: 15, letter: 2, expectedResult: null },
       { word: 'pikachu', expectedResult: 7 },
-      { word: 'pikachuu', expectedResult: 6 },
-      { word: 'pikachuchu', expectedResult: 4 },
-      { word: 'pikapika', expectedResult: 0 },
+      { word: 'pikachuu', expectedResult: 7 },
+      { word: 'pikachuchu', expectedResult: 7 },
+      { word: 'pikapika', expectedResult: 4 },
       { word: 'p', expectedResult: 1 },
-      { word: 'thunderbolt', expectedResult: 8 }
+      { word: 'thunderbolt', expectedResult: 10 }
     ];
 
     testCases.forEach(testCase => {
@@ -220,7 +220,7 @@ describe('tests for exercise-02-strings', () => {
         const result = numberOfUniqueLettersInWord(testCase.word);
 
         // assert
-        expect(result).equals(testCase.expectedResult);
+        expect(result).toEqual(testCase.expectedResult);
       });
     });
   });
