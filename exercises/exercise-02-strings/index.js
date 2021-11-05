@@ -252,7 +252,7 @@ const numberOfUniqueLettersInWord = (word) => {
   if (!word || typeof (word) != 'string') {
     return null;
   }
-  
+
   const uniqueLet = [];
   for (let i = 0; i < word.length; i++) {
     if (uniqueLet.includes(word[i]) === false) {
@@ -261,7 +261,7 @@ const numberOfUniqueLettersInWord = (word) => {
 
   }
   return uniqueLet.length;
-  
+
 };
 
 module.exports = {
