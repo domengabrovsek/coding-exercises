@@ -15,19 +15,14 @@ const highestNumber = (numbers) => {
     return null;
   }
 
-  // Returns the highest number currently in the list
-  let currentmax = numbers[0];
+  let currentmax = numbers[0]; // Returns the highest number currently in the list
   console.log('Max before starting loop ', currentmax);
   console.log('Length of list ', numbers.length);
 
-  // Iterates through the list one index at a time
-  for (let i = 0; i < numbers.length; i++) {
-    // Compares current index from list with current max number
-    console.log(`is ${numbers[i]} bigger than ${currentmax}?`);
-    // If current index is smaller than current max and current index is not a string
-    if (numbers[i] > currentmax && typeof (numbers[i]) !== 'string') {
-      // replace current max with the current index
-      currentmax = numbers[i];
+  for (let i = 0; i < numbers.length; i++) { // Iterates through the list one index at a time
+    console.log(`is ${numbers[i]} bigger than ${currentmax}?`); // Compares current index from list with current max number
+    if (numbers[i] > currentmax && typeof (numbers[i]) !== 'string') { // If current index is smaller than current max and current index is not a string
+      currentmax = numbers[i]; // replace current max with the current index
     }
   }
   return currentmax;
@@ -41,25 +36,18 @@ const highestNumber = (numbers) => {
  * @returns {Number} Lowest number
  */
 
-// If list is empty return 'Null'
-const lowestNumber = (numbers) => {
-  // Boolian operators - evaluates from left to right
-  if (numbers === undefined || numbers.length === 0) {
+const lowestNumber = (numbers) => { // If list is empty return 'Null'
+  if (numbers === undefined || numbers.length === 0) { // Boolian operators - evaluates from left to right
     return null;
   }
 
-  // Returns the lowest number currently in the list
-  let currentmin = numbers[0];
+  let currentmin = numbers[0]; // Returns the lowest number currently in the list
   console.log('Minimum before starting loop ', currentmin);
   console.log('Length of list ', numbers.length);
-  // Iterates through the list one index at a time
-  for (let i = 0; i < numbers.length; i++) {
-    // Compares current index from list with current minimum number
-    console.log(`is ${numbers[i]} smaller than ${currentmin}?`);
-    // If current index is smaller than current minimum and current index is not a string
-    if (numbers[i] < currentmin && typeof (numbers[i]) !== 'string') {
-      // replace current minimum with the current index
-      currentmin = numbers[i];
+  for (let i = 0; i < numbers.length; i++) { // Iterates through the list one index at a time
+    console.log(`is ${numbers[i]} smaller than ${currentmin}?`); // Compares current index from list with current minimum number
+    if (numbers[i] < currentmin && typeof (numbers[i]) !== 'string') { // If current index is smaller than current minimum and current index is not a string
+      currentmin = numbers[i]; // replace current minimum with the current index
     }
   }
   return currentmin;
@@ -74,14 +62,20 @@ const lowestNumber = (numbers) => {
  * @returns {Number} Number with most digits
  */
 
-const mostDigits = (numbers) => {
+  const mostDigits = (numbers) => {
   // Check if list is empty
   if (numbers === undefined || numbers.length === 0) {
     return null;
   }
 
+  const currMostDigits = numbers[0];
+  console.log('Number before starting the loop ', currMostDigits);
+  console.log('Length of list ', numbers.length);
   // TODO: Implement this function
-
+  for(let i = 0; i < currMostDigits; i++) {
+    console.log(`does ${numbers[i]} have more digits than ${currMostDigits}?`);
+    console.log(i.length);
+  }
   return numbers;
 };
 
