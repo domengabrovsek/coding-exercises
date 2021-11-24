@@ -67,16 +67,6 @@ const lowestNumber = (numbers) => { // If list is empty return 'Null'
   if (numbers === undefined || numbers.length === 0) {
     return null;
   }
-
-  const currMostDigits = numbers[0];
-  console.log('Number before starting the loop ', currMostDigits);
-  console.log('Length of list ', numbers.length);
-  // TODO: Implement this function
-  for(let i = 0; i < currMostDigits; i++) {
-    console.log(`does ${numbers[i]} have more digits than ${currMostDigits}?`);
-    console.log(i.length);
-  }
-  return numbers;
 };
 
 /**
