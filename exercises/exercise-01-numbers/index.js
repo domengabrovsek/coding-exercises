@@ -68,7 +68,7 @@ const lowestNumber = (numbers) => { // If list is empty return 'Null'
     return null;
   }
   for (let i = 0; i < numbers.length; i++) { // iterates through the array
-    if (numbers === 'number') {
+    if (numbers[i] === 'number') { // if array element is a number
     console.log(numbers[i]);
     }
   }
