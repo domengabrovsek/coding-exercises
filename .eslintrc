@@ -65,7 +65,7 @@
     "no-unsafe-optional-chaining": "error",
     "no-confusing-arrow": "error",
     "no-unused-expressions": "error",
-    "no-unused-vars": "error",
+    "no-unused-vars": "warn",
     "arrow-spacing": "error",
     "no-useless-call": "error",
     "no-use-before-define": "error",

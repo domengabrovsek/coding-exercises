@@ -17,8 +17,13 @@ npm --version
 // install dependencies
 npm install
 
-// run tests
+// run all tests
 npm run test
+
+// run tests for specific exercises
+npm run test:1
+npm run test:2
+npm run test:3
 
 // implement functions in index.js files and make all tests pass
 ```
