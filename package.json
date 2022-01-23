@@ -1,11 +1,13 @@
 {
   "name": "coding-exercises",
+  "type": "module",
   "version": "1.0.0",
   "description": "Practicing coding exercises",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "lint": "eslint . --max-warnings 0 --fix"
+    "test:3": "jest --verbose -t tests for exercise-03-for-loops",
+    "lint": "eslint . --fix"
   },
   "repository": {
     "type": "git",
