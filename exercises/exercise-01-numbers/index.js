@@ -13,15 +13,27 @@ const highestNumber = (numbers) => {
   }
 
   let currentmax = numbers[0]
-  console.log('Max before starting loop ', currentmax)
-  console.log('Length of list ', numbers.length)
 
-  for (let i = 0; i < numbers.length; i++) {
-    console.log(`is ${numbers[i]} bigger than ${currentmax}?`);
+  console.log('Preden se zanka zacne');
+
+  for (let i = numbers[numbers.length -1]; i >= 0; i--) { //nastavi mi stevec na nic ker hocem neki stet.
+
+    console.log('Trenutni index:', i, 'Trenutna vrednost:', numbers[i], 'Trenutni max: ', currentmax);
+
     if (numbers[i] > currentmax && typeof (numbers[i]) !== 'string') {
+      console.log(`Trenutna stevilka(${numbers[i]}) je vecja od trenutnega maxa(${currentmax})`);
       currentmax = numbers[i];
     }
+    else {
+      console.log(`Trenutna stevilka(${numbers[i]}) ni vecja od trenutnega maxa(${currentmax})`);
+    }
+
+    console.log('\n');
   }
+
+  console.log('Zanka se konca');
+  console.log('Vrnemo vrednost:', currentmax);
+
   return currentmax;
 }
 
