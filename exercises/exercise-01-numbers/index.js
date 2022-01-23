@@ -15,9 +15,13 @@ const highestNumber = (numbers) => {
     return null;
   }
 
-  let currentmax = numbers[0]; // Returns the highest number currently in the list
-  console.log('Max before starting loop ', currentmax);
-  console.log('Length of list ', numbers.length);
+  let currentmax = numbers[0];
+
+  console.log('Preden se zanka zacne');
+
+  for (let i = numbers[numbers.length - 1]; i >= 0; i--) { // nastavi mi stevec na nic ker hocem neki stet.
+
+    console.log('Trenutni index:', i, 'Trenutna vrednost:', numbers[i], 'Trenutni max: ', currentmax);
 
   for (let i = 0; i < numbers.length; i++) { // Iterates through the list one index at a time
     console.log(`is ${numbers[i]} bigger than ${currentmax}?`); // Compares current index from list with current max number
