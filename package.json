@@ -6,7 +6,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose",
-    "test:3": "jest --verbose -t tests for exercise-03-for-loops",
+    "test:1": "jest --verbose -t tests for exercise-01",
+    "test:2": "jest --verbose -t tests for exercise-02",
+    "test:3": "jest --verbose -t tests for exercise-03",
     "lint": "eslint . --fix"
   },
   "repository": {
