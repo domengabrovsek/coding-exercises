@@ -15,28 +15,16 @@ const highestNumber = (numbers) => {
     return null;
   }
 
-  let currentmax = numbers[0]
+  let currentmax = numbers[0]; // Returns the highest number currently in the list
+  console.log('Max before starting loop ', currentmax);
+  console.log('Length of list ', numbers.length);
 
-  console.log('Preden se zanka zacne');
-
-  for (let i = numbers[numbers.length - 1]; i >= 0; i--) { //nastavi mi stevec na nic ker hocem neki stet.
-
-    console.log('Trenutni index:', i, 'Trenutna vrednost:', numbers[i], 'Trenutni max: ', currentmax);
-
-    if (numbers[i] > currentmax && typeof (numbers[i]) !== 'string') {
-      console.log(`Trenutna stevilka(${numbers[i]}) je vecja od trenutnega maxa(${currentmax})`);
-      currentmax = numbers[i];
+  for (let i = 0; i < numbers.length; i++) { // Iterates through the list one index at a time
+    console.log(`is ${numbers[i]} bigger than ${currentmax}?`); // Compares current index from list with current max number
+    if (numbers[i] > currentmax && typeof (numbers[i]) !== 'string') { // If current index is smaller than current max and current index is not a string
+      currentmax = numbers[i]; // replace current max with the current index
     }
-    else {
-      console.log(`Trenutna stevilka(${numbers[i]}) ni vecja od trenutnega maxa(${currentmax})`);
-    }
-
-    console.log('\n');
   }
-
-  console.log('Zanka se konca');
-  console.log('Vrnemo vrednost:', currentmax);
-
   return currentmax;
 };
 
@@ -74,14 +62,14 @@ const lowestNumber = (numbers) => { // If list is empty return 'Null'
  * @returns {Number} Number with most digits
  */
 
-const mostDigits = (numbers) => {
+  const mostDigits = (numbers) => {
   // Check if list is empty
   if (numbers === undefined || numbers.length === 0) {
     return null;
   }
   for (let i = 0; i < numbers.length; i++) { // iterates through the array
     if (numbers[i] === 'number') { // if array element is a number
-      console.log(numbers[i]);
+    console.log(numbers[i]);
     }
   }
 };
