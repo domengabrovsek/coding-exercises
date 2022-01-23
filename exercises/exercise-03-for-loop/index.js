@@ -10,7 +10,7 @@ const sumArrays = (arr1, arr2) => {
 };
 
 /**
- * Function which accepts two of numbers and returns the product of sum from even numbers in first array and odd numbers in second
+ * Function which accepts two arrays of numbers and returns the product of sum from even numbers in first array and odd numbers in second
  * Example: [1,2,3], [4,5,6] -> 2 * 5 -> 10
  * @param {Array.<Number>} arr1
  * @param {Array.<Number>} arr2
