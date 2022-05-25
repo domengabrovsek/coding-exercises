@@ -1,6 +1,5 @@
 {
   "name": "coding-exercises",
-  "type": "module",
   "version": "1.0.0",
   "description": "Practicing coding exercises",
   "main": "index.js",
@@ -23,6 +22,7 @@
   },
   "homepage": "https://github.com/domengabrovsek/coding-exercises#readme",
   "dependencies": {
+    "axios": "^0.27.2",
     "jest": "^27.2.4"
   },
   "devDependencies": {
