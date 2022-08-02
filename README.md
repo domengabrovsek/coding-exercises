@@ -10,7 +10,7 @@ Some of my friends wanted to learn coding and I've decided to help them by creat
 // checkout the code
 git clone https://github.com/domengabrovsek/coding-exercises.git
 
-// make sure you have nodejs installed
+// make sure you have nodejs installed, if not go and install it
 node --version
 npm --version
 
